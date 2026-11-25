@@ -31,8 +31,13 @@ void SpendingCategory::SetAllocatedAmount(double nAAmt) {
 double SpendingCategory::GetAmountSpent() {
 	return amountSpent; }
 
-void SpendingCategory::UpdateAmountSpent() {
-	/*ADD UP PURCHASES and ASSIGN TO AMOUNT-SPENT*/ }
-
 void SpendingCategory::AddPurchase(Transaction nTrans) {
-	transactions.push_back(nTrans); }
+	transactions.push_back(nTrans);
+	amountSpent += nTrans.GetAmount(); }
+
+void SpendingCategory::RemovePurchase(int index) {
+	amountSpent -= transactions[index].GetAmount();
+	transactions.erase(transactions.begin() + index); }
+
+Transaction SpendingCategory::GetPurchase(int index) {
+	return transactions.at(index); }

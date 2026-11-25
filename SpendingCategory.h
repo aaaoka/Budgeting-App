@@ -13,8 +13,9 @@ public:
 	double GetAllocatedAmount();
 	void SetAllocatedAmount(double nAAmt);
 	double GetAmountSpent();
-	void UpdateAmountSpent();
 	void AddPurchase(Transaction nTrans);
+	void RemovePurchase(int index);
+	Transaction GetPurchase(int index);
 private:
 	string categoryName;
 	double allocatedAmount;
