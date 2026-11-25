@@ -4,7 +4,9 @@ using namespace std;
 
 class Transaction {
 public:
-	//constructor
+	Transaction(string iDesc, double iAmt);
+	string GetDescription();
+	double GetAmount();
 private:
 	string description;
 	double amount; };
