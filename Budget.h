@@ -1,15 +1,14 @@
 #pragma once
-
 #include <vector>
 using namespace std;
 #include "SpendingCategory.h"
 
 class Budget {
 	public:
-		//constructor
-		//set income
-		//get income
-		//add spending categories
+		Budget(double iInc);
+		double GetIncome();
+		void SetIncome(double nInc);
+		void AddCategory(SpendingCategory& nCat);
 	private:
 		double totalIncome;
 		vector<SpendingCategory*> categories; };
