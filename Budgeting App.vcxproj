@@ -130,6 +130,7 @@
     <ClCompile Include="bonus.cpp" />
     <ClCompile Include="Budget.cpp" />
     <ClCompile Include="BudgetTemplate.cpp" />
+    <ClCompile Include="Exec.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SpendingCategory.cpp" />
     <ClCompile Include="Transaction.cpp" />
@@ -138,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="Budget.h" />
     <ClInclude Include="BudgetTemplate.h" />
+    <ClInclude Include="Exec.h" />
     <ClInclude Include="SpendingCategory.h" />
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="Utility.h" />

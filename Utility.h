@@ -3,3 +3,5 @@
 using namespace std;
 
 string dollars(double amt);
+
+void cclear();
