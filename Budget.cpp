@@ -3,6 +3,11 @@
 Budget::Budget(double iInc) {
 	totalIncome = iInc; }
 
+Budget::~Budget() {
+	for (SpendingCategory* category : categories) {
+		delete category; }
+	categories.clear(); }
+
 double Budget::GetIncome() {
 	return totalIncome; }
 

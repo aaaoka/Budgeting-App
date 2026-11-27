@@ -6,6 +6,7 @@ using namespace std;
 class Budget {
 	public:
 		Budget(double iInc);
+		~Budget();
 		double GetIncome();
 		void SetIncome(double nInc);
 		void AddCategory(SpendingCategory& nCat);
